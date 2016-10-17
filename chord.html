@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        var started = false;
+        function start() {
+            document.getElementById("start").style.borderColor = "black";
+            document.getElementById("stop").style.borderColor = "white";
+            started = !started;
+        }
+        function stop() {
+            document.getElementById("start").style.borderColor = "white"
+            document.getElementById("stop").style.borderColor = "black";
+            started = !started;
+        }
+        </script>
+        <link rel="StyleSheet" href="style.css" type="text/css" />
+        <meta charset="utf-8">
+        <title>Chord Machine</title>
+    </head>
+    <body>
+        <h1>Chord Machine</h1>
+        <h2>This is the basic layout for our chord machine. Each button will
+        trigger a set of samples, which will be stored in the memory as
+        soon as the webpage is loaded.</h2>
+        <table>
+            <tr>
+                <td>C</td>
+                <td>C#</td>
+                <td>D</td>
+                <td>D#</td>
+                <td>E</td>
+                <td>F</td>
+                <td>F#</td>
+                <td>G</td>
+                <td>G#</td>
+                <td>A</td>
+                <td>A#</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>Cm</td>
+                <td>C#m</td>
+                <td>Dm</td>
+                <td>D#m</td>
+                <td>Em</td>
+                <td>Fm</td>
+                <td>F#m</td>
+                <td>Gm</td>
+                <td>G#m</td>
+                <td>Am</td>
+                <td>A#m</td>
+                <td>Bm</td>
+                <td>Cm</td>
+            </tr>
+            <tr>
+                <td>C7</td>
+                <td>C#7</td>
+                <td>D7</td>
+                <td>D#7</td>
+                <td>E7</td>
+                <td>F7</td>
+                <td>F#7</td>
+                <td>G7</td>
+                <td>G#7</td>
+                <td>A7</td>
+                <td>A#7</td>
+                <td>B7</td>
+                <td>C7</td>
+            </tr>
+            <tr>
+                <td>CM7</td>
+                <td>C#M7</td>
+                <td>DM7</td>
+                <td>D#M7</td>
+                <td>EM7</td>
+                <td>FM7</td>
+                <td>F#M7</td>
+                <td>GM7</td>
+                <td>G#M7</td>
+                <td>AM7</td>
+                <td>A#M7</td>
+                <td>BM7</td>
+                <td>CM7</td>
+            </tr>
+            <tr>
+                <td>Cm7</td>
+                <td>C#m7</td>
+                <td>Dm7</td>
+                <td>D#m7</td>
+                <td>Em7</td>
+                <td>Fm7</td>
+                <td>F#m7</td>
+                <td>Gm7</td>
+                <td>G#m7</td>
+                <td>Am7</td>
+                <td>A#m7</td>
+                <td>Bm7</td>
+                <td>Cm7</td>
+            </tr>
+            <tr>
+                <td>Caug</td>
+                <td>C#aug</td>
+                <td>Daug</td>
+                <td>D#aug</td>
+                <td>Eaug</td>
+                <td>Faug</td>
+                <td>F#aug</td>
+                <td>Gaug</td>
+                <td>G#aug</td>
+                <td>Aaug</td>
+                <td>A#aug</td>
+                <td>Baug</td>
+                <td>Caug</td>
+            </tr>
+            <tr>
+                <td>Cdim</td>
+                <td>C#dim</td>
+                <td>Ddim</td>
+                <td>D#dim</td>
+                <td>Edim</td>
+                <td>Fdim</td>
+                <td>F#dim</td>
+                <td>Gdim</td>
+                <td>G#dim</td>
+                <td>Adim</td>
+                <td>A#dim</td>
+                <td>Bdim</td>
+                <td>Cdim</td>
+            </tr>
+        </table>
+        <h3>Ear Trainer</h3>
+        <table>
+            <tr>
+                <td id="start" style="background-color:green" onclick="start()">Start</td>
+                <td id="stop" onclick="stop()" style="background-color:red">Stop</td>
+            </tr>
+        </table>
+    </body>
+</html>
