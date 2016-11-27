@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://www.prism.gatech.edu/~jpinder3/2525/chord.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="StyleSheet" href="./Chord Machine_files/style.css" type="text/css">
+        
+		<script type="text/javascript" src="./Chord Machine_files/ChordMachine.js"></script>
+        
+        <title>Chord Machine</title>
+    </head>
+    <body>
+        <h1>Chord Machine</h1>
+        <h2>The chord generation part is completely functional: when you click
+            on a chord, it plays the corresponding notes. The samples used are
+            not the final samples to be used, but they have the correct naming
+            per note. The ear trainer is not functional, except for the start
+            and stop buttons. If you turn it on, it will tell you whether or not
+            you clicked on C.
+        </h2>
+        <table>
+            <tbody><tr>
+                <td class="white" onclick="play5(c2,c3,e3,g3,c4);answer(&#39;C&#39;);">C</td>
+                <td class="black" onclick="play5(db2,db3,f3,ab3,db4);answer(&#39;D#&#39;)">C#</td>
+                <td class="white" onclick="play5(d2,d3,gb3,a3,d4);answer(&#39;D&#39;);">D</td>
+                <td class="black" onclick="play5(eb2,eb3,g3,bb3,eb4);answer(&#39;D#&#39;);">D#</td>
+                <td class="white" onclick="play5(e2,e3,ab3,b3,e4);answer(&#39;E&#39;);">E</td>
+                <td class="white" onclick="play5(f2,f3,a3,c4,f4);answer(&#39;F&#39;);">F</td>
+                <td class="black" onclick="play5(gb2,gb3,bb3,db4,gb4);answer(&#39;F#&#39;);">F#</td>
+                <td class="white" onclick="play5(g2,g3,b3,d4,g4);answer(&#39;G&#39;);">G</td>
+                <td class="black" onclick="play5(ab2,ab3,c4,eb4,ab4);answer(&#39;G#&#39;);">G#</td>
+                <td class="white" onclick="play5(a2,a3,db4,e4,a4);answer(&#39;A&#39;);">A</td>
+                <td class="black" onclick="play5(bb2,bb3,d4,f4,bb4);answer(&#39;A#&#39;);">A#</td>
+                <td class="white" onclick="play5(b2,b3,eb4,gb4,b4);answer(&#39;B&#39;);">B</td>
+                <td class="white" onclick="play5(c3,c4,e4,g4,c5);answer(&#39;C&#39;);">C</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="play5(c2,c3,eb3,g3,c4);answer(&#39;Cm&#39;);">Cm</td>
+                <td class="black" onclick="play5(db2,db3,e3,ab3,db4);answer(&#39;D#m&#39;);">C#m</td>
+                <td class="white" onclick="play5(d2,d3,f3,a3,d4);answer(&#39;Dm&#39;);">Dm</td>
+                <td class="black" onclick="play5(eb2,eb3,gb3,bb3,eb4);answer(&#39;D#m&#39;);">D#m</td>
+                <td class="white" onclick="play5(e2,e3,g3,b3,e4);answer(&#39;Em&#39;);">Em</td>
+                <td class="white" onclick="play5(f2,f3,ab3,c4,f4);answer(&#39;Fm&#39;);">Fm</td>
+                <td class="black" onclick="play5(gb2,gb3,a3,db4,gb4);answer(&#39;F#m&#39;);">F#m</td>
+                <td class="white" onclick="play5(g2,g3,bb3,d4,g4);answer(&#39;Gm&#39;);">Gm</td>
+                <td class="black" onclick="play5(ab2,ab3,b4,eb4,ab4);answer(&#39;G#m&#39;);">G#m</td>
+                <td class="white" onclick="play5(a2,a3,c4,e4,a4);answer(&#39;Am&#39;);">Am</td>
+                <td class="black" onclick="play5(bb2,bb3,db4,f4,bb4);answer(&#39;A#m&#39;);">A#m</td>
+                <td class="white" onclick="play5(b2,b3,d4,gb4,b4);answer(&#39;Bm&#39;);">Bm</td>
+                <td class="white" onclick="play5(c3,c4,eb4,g4,c5);answer(&#39;Cm&#39;);">Cm</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="play6(c2,c3,e3,g3,bb3,c4);answer(&#39;C7&#39;)">C7</td>
+                <td class="black" onclick="play6(db2,db3,f3,ab3,b3,db4);answer(&#39;C#7&#39;)">C#7</td>
+                <td class="white" onclick="play6(d2,d3,gb3,a3,c4,d4);answer(&#39;D7&#39;)">D7</td>
+                <td class="black" onclick="play6(eb2,eb3,g3,bb3,db4,eb4);answer(&#39;D#7&#39;)">D#7</td>
+                <td class="white" onclick="play6(e2,e3,ab3,b3,d4,e4);answer(&#39;E7&#39;)">E7</td>
+                <td class="white" onclick="play6(f2,f3,a3,c4,eb4,f4);answer(&#39;F7&#39;)">F7</td>
+                <td class="black" onclick="play6(gb2,gb3,bb3,db4,e4,gb4);answer(&#39;F#7&#39;)">F#7</td>
+                <td class="white" onclick="play6(g2,g3,b3,d4,f4,g4);answer(&#39;G7&#39;)">G7</td>
+                <td class="black" onclick="play6(ab2,ab3,c4,eb4,gb4,ab4);answer(&#39;G#7&#39;)">G#7</td>
+                <td class="white" onclick="play6(a2,a3,db4,e4,g4,a4);answer(&#39;A7&#39;)">A7</td>
+                <td class="black" onclick="play6(bb2,bb3,d4,f4,ab4,bb4);answer(&#39;A#7&#39;)">A#7</td>
+                <td class="white" onclick="play6(b2,b3,eb4,gb4,a4,b4);answer(&#39;B7&#39;)">B7</td>
+                <td class="white" onclick="play6(c3,c4,e4,g4,bb4,c5);answer(&#39;C7&#39;)">C7</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="play6(c2,c3,e3,g3,b3,c4);answer(&#39;CM7&#39;)">CM7</td>
+                <td class="black" onclick="play6(db2,db3,f3,ab3,c4,db4);answer(&#39;C#M7&#39;)">C#M7</td>
+                <td class="white" onclick="play6(d2,d3,gb3,a3,db4,d4);answer(&#39;DM7&#39;)">DM7</td>
+                <td class="black" onclick="play6(eb2,eb3,g3,bb3,d4,eb4);answer(&#39;D#M7&#39;)">D#M7</td>
+                <td class="white" onclick="play6(e2,e3,ab3,b3,eb4,e4);answer(&#39;EM7&#39;)">EM7</td>
+                <td class="white" onclick="play6(f2,f3,a3,c4,e4,f4);answer(&#39;FM7&#39;)">FM7</td>
+                <td class="black" onclick="play6(gb2,gb3,bb3,db4,f4,gb4);answer(&#39;F#M7&#39;)">F#M7</td>
+                <td class="white" onclick="play6(g2,g3,b3,d4,gb4,g4);answer(&#39;GM7&#39;)">GM7</td>
+                <td class="black" onclick="play6(ab2,ab3,c4,eb4,g4,ab4);answer(&#39;G#M7&#39;)">G#M7</td>
+                <td class="white" onclick="play6(a2,a3,db4,e4,g4,ab4);answer(&#39;AM7&#39;)">AM7</td>
+                <td class="black" onclick="play6(bb2,bb3,d4,f4,a4,bb4);answer(&#39;A#M7&#39;)">A#M7</td>
+                <td class="white" onclick="play6(b2,b3,eb4,gb4,bb4,b4);answer(&#39;BM7&#39;)">BM7</td>
+                <td class="white" onclick="play6(c3,c4,e4,g4,b4,c5);answer(&#39;CM7&#39;)">CM7</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="play6(c2,c3,eb3,g3,bb3,c4);answer(&#39;Cm7&#39;)">Cm7</td>
+                <td class="black" onclick="play6(db2,db3,e3,ab3,b4,db4);answer(&#39;C#m7&#39;)">C#m7</td>
+                <td class="white" onclick="play6(d2,d3,f3,a3,c4,d4);answer(&#39;Dm7&#39;)">Dm7</td>
+                <td class="black" onclick="play6(eb2,eb3,gb3,bb3,db4,eb4);answer(&#39;D#m7&#39;)">D#m7</td>
+                <td class="white" onclick="play6(e2,e3,g3,b3,d4,e4);answer(&#39;Em7&#39;)">Em7</td>
+                <td class="white" onclick="play6(f2,f3,ab3,c4,eb4,f4);answer(&#39;Fm7&#39;)">Fm7</td>
+                <td class="black" onclick="play6(gb2,gb3,a3,db4,e4,gb4);answer(&#39;F#m7&#39;)">F#m7</td>
+                <td class="white" onclick="play6(g2,g3,bb3,d4,f4,g4);answer(&#39;Gm7&#39;)">Gm7</td>
+                <td class="black" onclick="play6(ab2,ab3,b3,eb4,gb4,ab4);answer(&#39;G#m7&#39;)">G#m7</td>
+                <td class="white" onclick="play6(a2,a3,c4,e4,g4,a4);answer(&#39;Am7&#39;)">Am7</td>
+                <td class="black" onclick="play6(bb2,bb3,db4,f4,ab4,bb4);answer(&#39;A#m7&#39;)">A#m7</td>
+                <td class="white" onclick="play6(b2,b3,d4,gb4,a4,b4);answer(&#39;Bm7&#39;)">Bm7</td>
+                <td class="white" onclick="play6(c3,c4,e4,g4,bb4,c5);answer(&#39;Cm7&#39;)">Cm7</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="play5(c2,c3,e3,ab3,c4);answer(&#39;Caug&#39;)">Caug</td>
+                <td class="black" onclick="play5(db2,db3,f3,a3,db4);answer(&#39;C#aug&#39;)">C#aug</td>
+                <td class="white" onclick="play5(d2,d3,gb3,bb3,d4);answer(&#39;Daug&#39;)">Daug</td>
+                <td class="black" onclick="play5(eb2,eb3,g3,b3,eb4);answer(&#39;D#aug&#39;)">D#aug</td>
+                <td class="white" onclick="play5(e2,e3,ab3,c4,e4);answer(&#39;Eaug&#39;)">Eaug</td>
+                <td class="white" onclick="play5(f2,f3,a3,db4,f4);answer(&#39;Faug&#39;)">Faug</td>
+                <td class="black" onclick="play5(gb2,gb3,bb3,d4,gb4);answer(&#39;F#aug&#39;)">F#aug</td>
+                <td class="white" onclick="play5(g2,g3,b3,eb4,g4);answer(&#39;Gaug&#39;)">Gaug</td>
+                <td class="black" onclick="play5(ab2,ab3,c4,e4,ab4);answer(&#39;G#aug&#39;)">G#aug</td>
+                <td class="white" onclick="play5(a2,a3,db4,f4,a4);answer(&#39;Aaug&#39;)">Aaug</td>
+                <td class="black" onclick="play5(bb2,bb3,d4,gb4,bb4);answer(&#39;A#aug&#39;)">A#aug</td>
+                <td class="white" onclick="play5(b2,b3,eb4,g4,b4);answer(&#39;Baug&#39;)">Baug</td>
+                <td class="white" onclick="play5(c3,c4,e4,ab4,c5);answer(&#39;Caug&#39;)">Caug</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="play5(c2,c3,eb3,gb3,c4);answer(&#39;Cdim&#39;)">Cdim</td>
+                <td class="black" onclick="play5(db2,db3,e3,g3,db4);answer(&#39;C#dim&#39;)">C#dim</td>
+                <td class="white" onclick="play5(d2,d3,f3,ab3,d4);answer(&#39;Ddim&#39;)">Ddim</td>
+                <td class="black" onclick="play5(eb2,eb3,gb3,a3,eb4);answer(&#39;D#dim&#39;)">D#dim</td>
+                <td class="white" onclick="play5(e2,e3,g3,bb3,e4);answer(&#39;Edim&#39;)">Edim</td>
+                <td class="white" onclick="play5(f2,f3,ab3,b3,f4);answer(&#39;Fdim&#39;)">Fdim</td>
+                <td class="black" onclick="play5(gb2,gb3,a3,c4,gb4);answer(&#39;F#dim&#39;)">F#dim</td>
+                <td class="white" onclick="play5(g2,g3,bb3,db4,g4);answer(&#39;Gdim&#39;)">Gdim</td>
+                <td class="black" onclick="play5(ab2,ab3,b3,d4,ab4);answer(&#39;G#dim&#39;)">G#dim</td>
+                <td class="white" onclick="play5(a2,a3,c4,eb4,a4);answer(&#39;Adim&#39;)">Adim</td>
+                <td class="black" onclick="play5(bb2,bb3,db4,e4,bb4);answer(&#39;A#dim&#39;)">A#dim</td>
+                <td class="white" onclick="play5(b2,b3,d4,f4,b4);answer(&#39;Bdim&#39;)">Bdim</td>
+                <td class="white" onclick="play5(c3,c4,eb4,gb4,c5);answer(&#39;Cdim&#39;)">Cdim</td>
+            </tr>
+        </tbody></table>
+        <h3 id="trainerTitle">Ear Trainer</h3>
+        <table>
+            <tbody><tr>
+                <td id="start" onclick="start()" style="background-color:green;border-color:black;color:black;">Start</td>
+                <td id="stop" onclick="stop()" style="background-color:red;border-color:black;color:white;">Stop</td>
+            </tr>
+        </tbody></table>
+        <select id="difficulty" style="font-family:verdana;font-size:30px;display:block;margin: 0 auto;">
+			<option value="Easy">Easy</option>
+			<option value="Medium">Medium</option>
+			<option value="Hard">Hard</option>
+		</select>
+        <p id="diffDisplay" style="visibility:hidden;font-family:verdana;font-size:30px;text-align:center;">Difficulty: </p>
+        <p id="score" style="visibility:hidden;font-family:verdana;font-size:30px;text-align:center;">Score: </p>
+        <p id="ind" style="visibility:hidden;font-family:verdana;font-size:50px;text-align:center;">Correct!</p>
+        <h3>Volume control: </h3>
+        <table style="margin-top:5px;">
+            <tbody><tr>
+                <td class="white" onclick="changeVol(0);">0%</td>
+                <td class="white" onclick="changeVol(25);">25%</td>
+                <td class="white" onclick="changeVol(50);">50%</td>
+                <td class="white" onclick="changeVol(75);">75%</td>
+                <td class="white" onclick="changeVol(100);">100%</td>
+            </tr>
+        </tbody></table>
+    
+
+</body></html>
