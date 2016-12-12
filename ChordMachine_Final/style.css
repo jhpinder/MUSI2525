@@ -1,0 +1,95 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: black;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-family: sans-serif;
+    width: 1000px;
+}
+
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 38px;
+    font-family: verdana;
+    margin-top: 4px;
+    margin-bottom: 1px;
+}
+.white {
+    background-color: white;
+    color: black;
+}
+.black {
+    background-color: black;
+    color: white;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    margin-left: 50%;
+}
+
+p {
+    font-family: verdana;
+    font-size: 50px;
+    text-align: center;
+    margin: 100px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+    font: 25px sans-serif;
+    text-align: center;
+    border-spacing: 12px;
+}
+
+td {
+    background-color: #93d7ff;
+    height: 50px;
+    width: 80px;
+    border-spacing: inherit;
+    border-style: solid;
+    border-color: grey;
+    border-width: thick;
+    border-radius: 12px;
+
+
+                 cursor:default;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+input {
+    display: inline;
+}
+
+td:hover {
+    background-color: #84bee0;
+}
+
+td:active {
+    border-color: black;
+}

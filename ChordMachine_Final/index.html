@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="StyleSheet" href="style.css" type="text/css">
+		<script type="text/javascript" src="ChordMachine.js"></script>
+        <title>Chord Machine</title>
+    </head>
+    <body>
+        <h1>Chord Machine
+        <select id="instrument" onchange="changeInstrument(this)" style="font-size:20px">
+          <option value="piano">Piano</option>
+          <option value="guitar">Guitar</option>
+        </select></h1>
+        <table>
+            <tbody><tr>
+                <td class="white" onclick="answer(&#39;C&#39;);">C</td>
+                <td class="black" onclick="answer(&#39;C#&#39;)">C#</td>
+                <td class="white" onclick="answer(&#39;D&#39;);">D</td>
+                <td class="black" onclick="answer(&#39;D#&#39;);">D#</td>
+                <td class="white" onclick="answer(&#39;E&#39;);">E</td>
+                <td class="white" onclick="answer(&#39;F&#39;);">F</td>
+                <td class="black" onclick="answer(&#39;F#&#39;);">F#</td>
+                <td class="white" onclick="answer(&#39;G&#39;);">G</td>
+                <td class="black" onclick="answer(&#39;G#&#39;);">G#</td>
+                <td class="white" onclick="answer(&#39;A&#39;);">A</td>
+                <td class="black" onclick="answer(&#39;A#&#39;);">A#</td>
+                <td class="white" onclick="answer(&#39;B&#39;);">B</td>
+                <td class="white" onclick="answer(&#39;Chigh&#39;);">C</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="answer(&#39;Cm&#39;);">Cm</td>
+                <td class="black" onclick="answer(&#39;C#m&#39;);">C#m</td>
+                <td class="white" onclick="answer(&#39;Dm&#39;);">Dm</td>
+                <td class="black" onclick="answer(&#39;D#m&#39;);">D#m</td>
+                <td class="white" onclick="answer(&#39;Em&#39;);">Em</td>
+                <td class="white" onclick="answer(&#39;Fm&#39;);">Fm</td>
+                <td class="black" onclick="answer(&#39;F#m&#39;);">F#m</td>
+                <td class="white" onclick="answer(&#39;Gm&#39;);">Gm</td>
+                <td class="black" onclick="answer(&#39;G#m&#39;);">G#m</td>
+                <td class="white" onclick="answer(&#39;Am&#39;);">Am</td>
+                <td class="black" onclick="answer(&#39;A#m&#39;);">A#m</td>
+                <td class="white" onclick="answer(&#39;Bm&#39;);">Bm</td>
+                <td class="white" onclick="answer(&#39;Cmhigh&#39;);">Cm</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="answer(&#39;C7&#39;)">C7</td>
+                <td class="black" onclick="answer(&#39;C#7&#39;)">C#7</td>
+                <td class="white" onclick="answer(&#39;D7&#39;)">D7</td>
+                <td class="black" onclick="answer(&#39;D#7&#39;)">D#7</td>
+                <td class="white" onclick="answer(&#39;E7&#39;)">E7</td>
+                <td class="white" onclick="answer(&#39;F7&#39;)">F7</td>
+                <td class="black" onclick="answer(&#39;F#7&#39;)">F#7</td>
+                <td class="white" onclick="answer(&#39;G7&#39;)">G7</td>
+                <td class="black" onclick="answer(&#39;G#7&#39;)">G#7</td>
+                <td class="white" onclick="answer(&#39;A7&#39;)">A7</td>
+                <td class="black" onclick="answer(&#39;A#7&#39;)">A#7</td>
+                <td class="white" onclick="answer(&#39;B7&#39;)">B7</td>
+                <td class="white" onclick="answer(&#39;C7high&#39;)">C7</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="answer(&#39;CM7&#39;)">CM7</td>
+                <td class="black" onclick="answer(&#39;C#M7&#39;)">C#M7</td>
+                <td class="white" onclick="answer(&#39;DM7&#39;)">DM7</td>
+                <td class="black" onclick="answer(&#39;D#M7&#39;)">D#M7</td>
+                <td class="white" onclick="answer(&#39;EM7&#39;)">EM7</td>
+                <td class="white" onclick="answer(&#39;FM7&#39;)">FM7</td>
+                <td class="black" onclick="answer(&#39;F#M7&#39;)">F#M7</td>
+                <td class="white" onclick="answer(&#39;GM7&#39;)">GM7</td>
+                <td class="black" onclick="answer(&#39;G#M7&#39;)">G#M7</td>
+                <td class="white" onclick="answer(&#39;AM7&#39;)">AM7</td>
+                <td class="black" onclick="answer(&#39;A#M7&#39;)">A#M7</td>
+                <td class="white" onclick="answer(&#39;BM7&#39;)">BM7</td>
+                <td class="white" onclick="answer(&#39;CM7high&#39;)">CM7</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="answer(&#39;Cm7&#39;)">Cm7</td>
+                <td class="black" onclick="answer(&#39;C#m7&#39;)">C#m7</td>
+                <td class="white" onclick="answer(&#39;Dm7&#39;)">Dm7</td>
+                <td class="black" onclick="answer(&#39;D#m7&#39;)">D#m7</td>
+                <td class="white" onclick="answer(&#39;Em7&#39;)">Em7</td>
+                <td class="white" onclick="answer(&#39;Fm7&#39;)">Fm7</td>
+                <td class="black" onclick="answer(&#39;F#m7&#39;)">F#m7</td>
+                <td class="white" onclick="answer(&#39;Gm7&#39;)">Gm7</td>
+                <td class="black" onclick="answer(&#39;G#m7&#39;)">G#m7</td>
+                <td class="white" onclick="answer(&#39;Am7&#39;)">Am7</td>
+                <td class="black" onclick="answer(&#39;A#m7&#39;)">A#m7</td>
+                <td class="white" onclick="answer(&#39;Bm7&#39;)">Bm7</td>
+                <td class="white" onclick="answer(&#39;Cm7high&#39;)">Cm7</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="answer(&#39;Caug&#39;)">Caug</td>
+                <td class="black" onclick="answer(&#39;C#aug&#39;)">C#aug</td>
+                <td class="white" onclick="answer(&#39;Daug&#39;)">Daug</td>
+                <td class="black" onclick="answer(&#39;D#aug&#39;)">D#aug</td>
+                <td class="white" onclick="answer(&#39;Eaug&#39;)">Eaug</td>
+                <td class="white" onclick="answer(&#39;Faug&#39;)">Faug</td>
+                <td class="black" onclick="answer(&#39;F#aug&#39;)">F#aug</td>
+                <td class="white" onclick="answer(&#39;Gaug&#39;)">Gaug</td>
+                <td class="black" onclick="answer(&#39;G#aug&#39;)">G#aug</td>
+                <td class="white" onclick="answer(&#39;Aaug&#39;)">Aaug</td>
+                <td class="black" onclick="answer(&#39;A#aug&#39;)">A#aug</td>
+                <td class="white" onclick="answer(&#39;Baug&#39;)">Baug</td>
+                <td class="white" onclick="answer(&#39;Caughigh&#39;)">Caug</td>
+            </tr>
+            <tr>
+                <td class="white" onclick="answer(&#39;Cdim&#39;)">Cdim</td>
+                <td class="black" onclick="answer(&#39;C#dim&#39;)">C#dim</td>
+                <td class="white" onclick="answer(&#39;Ddim&#39;)">Ddim</td>
+                <td class="black" onclick="answer(&#39;D#dim&#39;)">D#dim</td>
+                <td class="white" onclick="answer(&#39;Edim&#39;)">Edim</td>
+                <td class="white" onclick="answer(&#39;Fdim&#39;)">Fdim</td>
+                <td class="black" onclick="answer(&#39;F#dim&#39;)">F#dim</td>
+                <td class="white" onclick="answer(&#39;Gdim&#39;)">Gdim</td>
+                <td class="black" onclick="answer(&#39;G#dim&#39;)">G#dim</td>
+                <td class="white" onclick="answer(&#39;Adim&#39;)">Adim</td>
+                <td class="black" onclick="answer(&#39;A#dim&#39;)">A#dim</td>
+                <td class="white" onclick="answer(&#39;Bdim&#39;)">Bdim</td>
+                <td class="white" onclick="answer(&#39;Cdimhigh&#39;)">Cdim</td>
+            </tr>
+        </tbody></table>
+        <div class="left">
+            <h3 id="trainerTitle">Ear Trainer</h3>
+            <table>
+                <tbody><tr>
+                    <td id="start" onclick="start()" style="background-color:green;border-color:black;color:black;">Start</td>
+                    <td id="stop" onclick="stop()" style="background-color:red;border-color:black;color:white;">Stop</td>
+                    <td id="replay" onclick="replay()" style="background-color:white;border-color:black;color:white;color:black;font-size:24px;">Replay</td>
+                    <td id="reference" onclick="stopAllAudio();c4.play()" style="background-color:white;border-color:black;color:white;color:black;font-size:20px;">C4</td>
+                </tr>
+            </tbody></table>
+            <select id="difficulty" style="font-family:verdana;font-size:30px;display:block;margin: 0 auto;">
+    			<option value="Easy">Easy</option>
+    			<option value="Medium">Medium</option>
+    			<option value="Hard">Hard</option>
+    		</select>
+        </div>
+        <div class="right">
+            <p id="diffDisplay" style="visibility:hidden;font-family:verdana;font-size:30px;text-align:center;margin:20px;">Difficulty: </p>
+            <p id="score" style="visibility:hidden;font-family:verdana;font-size:30px;text-align:center;margin:20px;">Score: </p>
+            <p id="ind" style="visibility:hidden;font-family:verdana;font-size:50px;text-align:center;margin:20px;">Correct!</p>
+        </div>
+        <h3>Volume control: </h3>
+        <h3><input type="range" min="0" max="100" value="1000" step="5" id="volumeSlider" name="range" onchange="changeVol(this.value)"><br />
+        <span id="volumeText">100%</span><br />
+        <!--<input id="firstChord"/ value="C">
+        <input id="secondChord" value="G"/>
+        <input id="thirdChord" value="Am"/>
+        <input id="fourthChord" value="F"/>
+        <table>
+            <tbody><tr><td class="white" onclick="startChords();">Go!</td></tr></tbody>
+        </table>  -->  
+    </body>
+</html>
